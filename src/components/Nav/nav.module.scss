@@ -1,0 +1,121 @@
+@import "../../scss/vars";
+
+.nav {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.item {
+  margin: 0;
+}
+
+.link {
+  color: white;
+  text-transform: capitalize;
+  display: block;
+  padding: calc(1em - 6px) 1em;
+  border-bottom: 3px solid transparent;
+  border-top: 3px solid transparent;
+  margin: 0;
+  @media all and (min-width: 576px) {
+    &:hover {
+      background-color: #363b47;
+      border-bottom-color: $color;
+      text-decoration: none;
+      .drop {
+        display: block;
+      }
+    }
+  }
+}
+
+.active {
+  background-color: #363b47;
+  border-bottom-color: $color;
+}
+@media all and (min-width: 769px) {
+  .nav {
+    display: flex;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .headerNav {
+    align-self: stretch;
+    background-color: $color;
+    box-shadow: 0 5px 10px -6px rgba(0, 0, 0, 0.5) inset,
+      0 1px 1px rgba(0, 0, 0, 0.05) inset;
+    overflow: hidden;
+    max-height: 0;
+    transition: all 0.2s linear;
+    margin: 0 -1em;
+  }
+  .item {
+    &:last-of-type {
+      .link {
+        border: none;
+      }
+    }
+  }
+  .link {
+    padding: calc(0.7em - 6px) 1em;
+    border-bottom: 1px solid darken($color, 20%);
+  }
+}
+@media all and (min-width: 769px) {
+  .drop {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    margin-top: 13px;
+    background-color: #f4f5f6;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-left: -1em;
+    display: none;
+    &Item {
+      margin: 0;
+    }
+    &Link {
+      display: block;
+      padding: 0.5em 1em;
+      &:hover {
+        background-color: lighten($color, 20%);
+        text-decoration: none;
+        color: $white;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 768px) {
+  .headerNav {
+    .link {
+      border-top: none;
+      padding: 0.5em 1em;
+      border-bottom: 1px solid darken($color, 20%);
+    }
+  }
+  .drop {
+    margin: 0 -1em;
+    position: relative;
+    top: 0.5em;
+    padding: 0;
+    list-style-type: none;
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    &Item {
+      margin: 0;
+    }
+    &Link {
+      display: block;
+      padding: 0.5em 1em;
+      &:hover {
+        background-color: lighten($color, 20%);
+        text-decoration: none;
+        color: $white;
+      }
+    }
+  }
+}

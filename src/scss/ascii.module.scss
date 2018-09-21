@@ -1,0 +1,6 @@
+.ascii {
+  padding: 1em 0;
+  @media all and (max-width: 1199px) {
+    padding: 1em;
+  }
+}

@@ -1,0 +1,53 @@
+@import "../scss/vars";
+
+.blogPost {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 2em;
+  @media all and (min-width: 575px) and (max-width: 768px) {
+    grid-gap: 1em;
+  }
+}
+
+.article {
+  grid-column: 1 / 10;
+  @media all and (max-width: 991px) {
+    grid-column: 1 / 9;
+  }
+  @media all and (max-width: 768px) {
+    grid-column: 1 / -1;
+  }
+}
+
+.sidebar {
+  grid-column: 10 / -1;
+  @media all and (max-width: 991px) {
+    grid-column: 9 / -1;
+  }
+  @media all and (max-width: 768px) {
+    grid-column: 1 / -1;
+  }
+}
+
+.article {
+  @media all and (max-width: 1199px) {
+    padding: 0 1em;
+  }
+}
+
+pre[class*="language-"] {
+  background: #2d2d2d;
+  border-radius: 10px;
+}
+
+/*
+ * The Standard Bootstrap 4.x Breakpoints
+*/
+@media all and (max-width: 1199px) {
+}
+@media all and (max-width: 991px) {
+}
+@media all and (max-width: 768px) {
+}
+@media all and (max-width: 575px) {
+}
