@@ -20,137 +20,166 @@ lessonId: 1
 order: 1
 ---
 
-This week we will have an introduction to HTML, the HTML template and what block elements are and how to use them.
+In this lesson we will talk about how CSS works, basic selectors and basic format of CSS.
 
 <span class="more"></span>
 
-## What is HTML?
+## Locations of Styles
+Styles can be written in 3 different location.  Where they style is defined will impact how an element will be displayed.
 
-HTML or Hyper Text Markup Language is the building blocks of all web pages. HTML uses tags to create element that are filled with content like text and images. The elements are instructions to the web browser how to display the content on the screen.
+* External file include within the HTML file
+* Embedded or Internal style sheet local to HTML file
+* Inline style that is added directly to an HTML element
 
-Another way to think about it is HTML is a series of start and stop commands for the web browser. The browser then renders that content to the specs of HTML.
+---
 
-## The Three Buckets
+## Weight of locations
+The location impacts the presentation of the HTML element.
 
-Modern web development uses the three bucket approach. Each bucket adds another layer to the display of the page.
+* Default browser setting
+* External style sheet.  Last one included on the page has most weight
+* Embedded on the page - Last style defended will be displayed.
 
-<ul class="buckets">
-  <li>HTML</li>
-  <li>CSS</li>
-  <li>JavaScript</li>
-</ul>
+---
 
-- HTML is the building blocks or scaffolding of the page.
-- CSS or Cascading Style Sheets is the presentation or the look and feel of the page.
-- JavaScript is the action layer of the page. We will not cover any JavaScript in this class.
+## Inline Style
 
-## The Tag
+In the case where two elements have the same style applied the more specific the style the more weight it has.  An inline style has the most weight because it is applied directly to an element. In internal style sheet has more weight than an external because it applied only to that on page.
 
-There are over 80 different HTML tags that can be used. They all have the same basic format. Most tags have an opening and a closing tag.
+The efficiency of a style often time is the opposed of how specific it is.  This is because you often want to reuse a style across may elements or page with in your site.
 
-```html
-<tag>content</tag>
-```
+---
 
-All tags have brackets around them `<` and `>` that are used by the browser to know what is a tag and what is content. Right after the opening bracket `<` is the tag name like h1 or p then the closing bracket `>`.
+## Selectors
+In CSS, selectors are used to declare which of the markup elements a style applies to, a kind of match expression.  In other words it is the instruction to the CSS on what HTML elements should be styled but not how they should be styled.
 
-```html
-<tag>
-```
+There are 3 basic selectors each has its own weight that defines how an element will look when there are conflicting styles.
 
-If the tag has a closing tag it will match the opening tag but have an `/` after the opening bracket. This is the indication to the browser to close the tag that was opened. With out it the browser would never know when to stop.
+* Tag Name Selector
+* Class Name Selector
+* ID Name Selector
 
-```html
-</tag>
-```
+---
 
-There are a few number of tags that do not have a closing tag because they do not wrap any content. Older versions of HTML required that all tags be opened and closed. This is no longer the case although you may still see a self-closing tag `<tag />` in code examples.
+## Tag Name Selector
+Because HTML has a standard set of tags use CSS can use there names to connect the HTML and CSS.  A tag name selector will apply the style to all elements on a page that match that tag name.
 
-## Attributes
+For example if a html page use the paragraph tag CSS can style all P tags on the page to look the same way.  This is very efficient to style a large number of elements at one time.  Because the HTML tag is the reference there is no need to add any addiction mark up.
 
-Sometimes a tag will need additional information to perform correctly. Adding an attribute to the tag allows the developer to set the correct information on each tag.
+---
 
-- Attributes will always go on the opening tag after the tag name. There must be space between the tag name and the attribute name.
-- Attributes do not need to be closed. In other words when you close a tag you close its entire attribute.
-- If an attribute has a value the value must be quoted and you should use the double quote "
-- If an attribute has a value there must be an equal sign = between the attribute name and the value.
-- The order of the attribute does not matter.
-- The number of attributes that are used has decreased with newer versions of HTML.
+## Class Name Selectors
+Often times a style will need to be applied to one or more elements on a page but not all elements.  To allow of a style to be applied to one more more elements on a page a class is created and added to the HTML element.
 
-### One Attribute
+* A class selectors must have a name given to it.
+* A class name can be applied to one or more elements with in a document.
+* A class attribute must be added to an HTML element.  `class="className"`
+* Class names are case sensitive
 
-```html
-<tag attribute="value">content</tag>
-```
+---
 
-### Two Attributes
+## ID Name Selectors
+Like the class selectors ID selector are applied to an element within the document but unlike a class an ID name can only be used once.
 
-```html
-<tag attribute="value" attribute="value">content</tag>
-```
+* An ID selector must have a name given to it.
+* An ID name can be used only once per document.
+* An ID attribute must be added to an HTML element `id="idName"`
 
-## Block-level vs inline
+**Note:** ID names are case sensitive
 
-Most all tags fall in to one of two types of tags, inline or block. Understanding how an element displays will help you choose the correct tag to use.
+---
 
-Block-level elements will
+## Weight of selectors
+The more specific a selector is the more weight it has.  An ID has the the most weight because it is used on a page only once.  A class has more weight than a tag selector because it defines what elements it is applied to.
 
-- Fill the full width of the parent element
-- Force the content to its own line
-- Allows for padding and margin to be set on the top and bottom.
+Any time you put effort in to connecting the HTML and the CSS it will have more weight than if you do nothing to the HTML.
 
-### Examples
+---
 
-`<p>`, `<div>`, `<header>`, `<nav>`, `<ul>`, `<li>`, and `<h1>`.
+### Order of weight
+* ID Name
+* Class Name
+* Tag Name
 
-Inline will
+---
 
-- Only take up the space of the content
-- Wont force the content two its own line i.e. stay "inline"
-- Can't have padding on the top and bottom
-- Can't have a width or height set
-  Examples
-  `<a>`, `<span>`, `<strong>`, `<em>` and `<code>`.
+## Inline Styles
+Inline style are effect way of applying a style to one element.  The down side is that it is not reusable.  If you where apply that style a second time you would need to create that style a second time.
 
-The block examples are structural elements, while the inline elements are text-based. This is an easy way to remember which is which.
-
-Generally speaking, you can put any block element inside another block element. You can also put any inline element inside a block element, as well as any inline element inside any other inline element. But you cannot put a block element inside an inline element. The paragraph tags also must be the inner most block element or in other words you cannot have a paragraph tag nested in a paragraph tag.
-
-## Nesting Elements
-
-If we think about html as the building blocks of a webpage we will have to nest elements within in each other to build the page correctly.
-
-Think about it this way. If we were to build a house we might start to build the ground floor. We might add a kitchen, bathroom and living room all with in the ground floor. We would not finish the floor until all the rooms are done.
+### How to use
+Inline styles are applied to an HTML element with an attribute of style.  The attribute is HTML but the value is CSS.
 
 ```html
-House
-    Floor
-        Kitchen
-        Bathroom
-        Living room
-    Floor
-        Bed Room
-        Bed Room
-        Bathroom
+<h1 style="property:value;">HTML Text</h1>
 ```
 
-If this was HTML it might look something like this
+### Internal and External Styles
+The more common way to use CSS is to add the style to an external file or internal style block.  This creates a clear separation between the HTML and the CSS.  If the CSS is written in an external file that file can used on many pages with in your site and if a change needs to be made it is made in once place an applied to all pages at the same time.
+
+### How to use
+#### HTML
+On each element that a class is applied you need to add the class attribute with a value of the class name.  Note: that class name can be anything you want it it be.  The example below use a generic className but it could be almost anything.  The same thing goes for the ID name.
 
 ```html
-<house>
-    <floor>
-        <kitchen></kitchen>
-        <bathroom></bathroom>
-        <living></living>
-    </floor>
-    <floor>
-        <bed></bed>
-        <bed></bed>
-        <bathroom></bathroom>
-    </floor>
-</house>
+<h1 class="className">HTML Text</h1>
+<p class="className">HTML Text</p>
 ```
 
-You can see we open the house tag but do not close it until both floors are done.
+*or*
 
-First in, last out. The first tag you open is the last tag you close.
+```html
+<div id="idName">
+    <p>HTML Text</p>
+</div>
+```
+
+---
+
+## CSS - internal style sheet
+The style block will be added with the HEAD tag.  Adding a style tag.
+
+To define a class use the class name defined in the HTML and add a period (.) in front of it. .className
+
+To define an id use the id name defined in the HTML and add a number symbol (#) in front of it. #idName
+
+```html
+<style>
+.className {
+    property: value;
+}
+#idName {
+    property: value;
+}
+</style>
+```
+
+---
+
+## CSS Syntax
+The syntax for css is very different than HTML syntax.
+
+### Basic format
+* **Declaration** - The whole style including the selector and properties and values.
+* **Selector** - How the HTML and CSS are connected
+* **Property** - predefined options used to change the look and feel of an element.
+* **Value** - predefined value based on selected property.
+* **Colon(:)** - indicates the end of the property.
+* **Semicolon(;)** - indicates the end of a value.  Semicolons are required.
+
+Inline style - when using an inline style you will only use the property and value.
+Basic format
+
+```css
+selector {
+    property: value;
+}
+```
+
+More than one property - declarations can have many properties defined
+
+```css
+selector {
+    property1: value;
+    property2: value2;
+}
+```

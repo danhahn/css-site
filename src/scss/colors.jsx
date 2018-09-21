@@ -27,5 +27,5 @@ export default class Colors {
   }
 }
 
-export const colors = new Colors("#c0392b");
+export const colors = new Colors("#517e45");
 

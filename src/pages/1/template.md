@@ -1,6 +1,6 @@
 ---
 title: Lesson 1
-lesson: Building a HTML template
+lesson: HTML template
 date: 1/24/2018 15:00
 template: article.jade
 tags:

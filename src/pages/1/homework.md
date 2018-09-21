@@ -1,98 +1,83 @@
 ---
 title: Lesson 1
 lesson: Homework
-date: 1/24/2018 15:00
 template: article.jade
 lessonId: 1
-order: 6
-
-nav:
-  Introduction: index.html
-  Editors: editors.html
-  HTML Template: template.html
-  Block Elements: block.html
-  Classwork: classwork.html
-  Homework: homework.html
-homework:
-  lesson: lesson1
+order: 8
 ---
 
-Create a new HTML document form the template that we created in class. Save the file as **homework_1_yourname.html** and send it to **dan@svahtml.com**.
+## Starter File
 
-## Goals of this homework
+Create a new file and name it `yourname_homework1.html`. **replace younrame with you real name**
 
-1.  Become comfortable with with writing HTML.
-2.  See how pages look without any CSS(styles) applied
-3.  Take content and add markup.
+Copy the code below and paste in to the file you just created and save it.
 
-## Coding the page
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CSS Homework Week 1</title>
+</head>
+<body>
+<main class="wrapper">
+  <nav class="header-links">
+    <a href="#">About</a>
+    <a href="#">Dates</a>
+    <a href="#">Contact</a>
+  </nav>
+  <header class="main-image">
+    <img src="http://css.svahtml.com/lessons/lesson-1/images/LA_2028_Olympics_Logo.png" alt="">
+  </header>
 
-* Use a `<main>` to wrap all content on the page
-* Ues a `<header>` to define part of the page as the header
-* Use a `<article>` to define the content of this page
-* Use a `<footer>` to define the footer of this page
+  <article class="main">
+    <p>The <strong>2028 Summer Olympics</strong>, officially known as the Games of the XXXIV Olympiad, and commonly known as LA 2028/Los Angeles 2028, is a forthcoming international multi-sport event, which will be hosted in the city of <em>Los Angeles, California, United States</em> between July 21 and August 6, 2028.</p>
+    <p>Bidding for the host city was originally scheduled to begin in 2019 with the winning bid scheduled to be announced in 2021. However, following difficulties with cities withdrawing in the bidding process for the 2022 Winter and 2024 Summer Olympics, the International Olympic Committee (IOC) decided in July 2017 to jointly award both the 2024 and 2028 Games. On July 31, 2017, an agreement was announced that Los Angeles would bid for the 2028 Games with $1.8 billion of additional funding from the IOC, which opened Paris up to be confirmed as host of the 2024 Games. Both cities were announced as winners of their respective games at the 131st IOC Session in Lima, Peru, on September 13, 2017.</p>
+    <p>This will be the fifth Summer Games to be hosted in the United States, and the third in Los Angeles following St. Louis 1904, Los Angeles 1932, Los Angeles 1984 and Atlanta 1996. Los Angeles will also become the third city after London (1908, 1948 and 2012) and Paris (1900, 1924 and 2024) to host the Olympic Games three times.</p>
+  </article>
+  <footer class="footer-section">
+    <p>&copy;2017 International Olympic Committee</p>
+  </footer>
+</main>
+</body>
+</html>
+```
 
-or use the text below.
-
-### Page Title
-
----
-
-About New York - New York City Hall
-
----
-
-### Header
-
----
-
-About New York
-
----
-
-### Article
 
 ---
 
-<pre class="text-content">
-New York City Hall
+## Add Style Block
 
-New York City
-City Hall Park
-New York, NY 10007
+Add style block within the `<head>`.
 
-New York City Hall, the seat of New York City government, is located at the center of City Hall Park in the Civic Center area of Lower Manhattan, between Broadway, Park Row, and Chambers Street. The building is the oldest city hall in the United States that still houses its original governmental functions, such as the office of the Mayor of New York City and the chambers of the New York City Council. While the Mayor's Office is in the building, the staff of thirteen municipal agencies under mayoral control are located in the nearby Manhattan Municipal Building, one of the largest government buildings in the world.
+### Tag Name Selectors
 
-Constructed from 1803 to 1812, New York City Hall is a National Historic Landmark and is listed on the National Register of Historic Places. Both its exterior (1966) and interior (1976) are designated New York City landmarks.
+Selector | Property | Value
+---|---|---
+body | font | 16px arial
+&nbsp; | color | #666
 
-History and description
+### Class Name selector
 
-New Amsterdam's first City Hall was built by the Dutch in the 17th century near 73 Pearl Street. The city's second City Hall, built in 1700, stood on Wall and Nassau Streets. That building was renamed Federal Hall after New York became the first official capital of the United States after the Revolutionary War. Plans for building a new City Hall were discussed by the New York City Council as early as 1776, but the financial strains of the war delayed progress. The Council chose a site at the old Common at the northern limits of the City, now City Hall Park. City Hall was originally an area for the first almhouse in 1653. In 1736, there was a financed almhouse for those who were fit to work, for the unfit, and those that were like criminals but were paupers.
+Selector | Property | Value
+---|---|---
+.wrapper | width | 800px
+&nbsp; | margin | 0 auto
+.header-links | text-align | center
+&nbsp; | border-bottom | 1px solid #323460
+.header-links a | color | #E2557A
+&nbsp; | text-decoration | none
+&nbsp; | text-transform | uppercase
+&nbsp; | display | inline-block
+&nbsp; | padding | 10px
+.main-image | text-align | center
+.main | padding | 0 100px 100px
+.main p:first-of-type | color | #F2894D
+&nbsp; | font-size | 1.2em
+.footer-section | text-align | center
+&nbsp; | border-top | 1px solid #864C90
+&nbsp; | color | #FBC619;
 
-Quotes about City Hall
-
-City Hall is also referred to in the folk song "The Irish Rover" as performed by The Clancy Brothers, The Pogues and The Dubliners:
-
-  In the year of our Lord, eighteen hundred and six,
-  We set sail from the Coal Quay of Cork
-  We were sailing away with a cargo of bricks
-  For the grand City Hall in New York
-
-In popular culture
-
-New York City Hall has played a central role in several films and television series.
-
-* Spin City (1996–2002), set in City Hall, starred Michael J. Fox as a Deputy Mayor making efforts to stop the dim-witted Mayor from embarrassing himself in front of the media and voters.
-* City Hall (1996) starred Al Pacino as an idealistic Mayor and John Cusack as his Deputy Mayor, who leads an investigation with unexpectedly far-reaching consequences into an accidental shooting.
-* In the 1984 movie Ghostbusters the Mayor summons the protagonists to City Hall to discuss the impending end of the world.
-* In the 2016 movie Fantastic Beasts and Where to Find Them, part of J. K. Rowling's Wizarding World, Senator Henry Shaw (played by Josh Cowdery) holds a fundraising dinner at City Hall for his re-election; this dinner is later disrupted by a magical force that attacks him while he is delivering a speech. St George's Hall, in Liverpool, stands-in for the City Hall in both interior and exterior scenes.
-
-</pre>
-
----
-
-### Footer
-
----
-
-(c) 2017 SVA HTML
+<div class="homework-view" data-lesson="lesson1"></div>
