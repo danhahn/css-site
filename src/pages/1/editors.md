@@ -92,7 +92,7 @@ Price: **Free**<br>
 Requires: OS X 10.6.6 or later<br>
 Developer: Apple Inc.
 
-<iframe src="http://player.vimeo.com/video/71448456?byline=0&amp;portrait=0&amp;color=ff9933" width="500" height="415" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+<iframe src="//player.vimeo.com/video/71448456?byline=0&amp;portrait=0&amp;color=ff9933" width="500" height="415" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 
 <style>
 h2 + p {
