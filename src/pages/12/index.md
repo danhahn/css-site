@@ -3,10 +3,10 @@ title: Lesson 12
 index: true
 author: Dan Hahn
 lesson: Final Project
-date: 4/25/2018 15:00
 template: article.jade
-nav:
-  Final Project: index.html
+lessonId: 12
+order: 1
+
 badges: [html,css]
 ---
 

@@ -1,9 +1,7 @@
 ---
 title: Lesson 2
 index: true
-lesson: Anchor Tag
-author: Dan Hahn
-date: 1/31/2018 15:00
+lesson: Font Properties
 template: article.jade
 lessonId: 2
 order: 1
@@ -29,127 +27,87 @@ nav:
 badges: [html]
 ---
 
-This week we will talk about how to create links and embed images.
+This week we will talk about font, text, border, padding and margins.  We will also talk about colors.
 
 <span class="more"></span>
 
-The anchor tag or the `<a>` tag is most commonly used to create a link to an other file or page. The anchor tag by default will not act as a link without the `href` attribute.
 
-The anchor tag can also be used to set a point on a page where the page can be linked to. You might see this on an FAQ page where you have a list of questions at the top and the answers at the bottom.
+Property            | Values
+--------------------|-------------------------------------------------
+font:* <br>required | style variant weight size */line-height  family *<br>example: font:bold 10px/12px verdana,"Lithos Regular",sans-serif;*
+font-style:         | normal, italic
+font-variant:       | normal, small-caps
+font-weight:        | normal, bold
+font-size: *        | length, percent
+line-height:        | normal, **number**, **length**, **percent**
+font-family: *      | **family-name**, serif (Times), sans-serif (Helvetica), cursive (Zapf-Chancery), fantasy (Western), monospace (Courier)
 
-Please note there is not a link tag. If someone askes you to create a link they are talking about the anchor tag.
-
-## Example
-
-```html
-<a href=”http://www.sva.edu”>http://www.sva.edu</a>
-```
-
-**or**
-
-```html
-<a name="pointname">Page Content</a>
-```
-
-### Description
-
-| Attributes | Value    | Description                                                                       |
-| ---------- | -------- | --------------------------------------------------------------------------------- |
-| `href=""`  | URL      | The target URL of the link                                                        |
-| `target`   | `_blank` | Where to open the target URL. `_blank` - the target URL will open in a new window |
+When styling fonts with CSS they are broken into two types.  **Font** properties and **Text** properties. The two are very similar, the **Font** deals more with the character set and the **Text** is more about changing the way the font looks.
 
 ---
 
-## Parts of a link
-
-There are two parts to create a link
-
-1.  The text or content the user can click on
-2.  The location of the page the user will have the page replace.
-
-### Example
-
-```html
-<a href="location/of/file.html">Clickable text</a>
+`font` - is a shorthand way to express any font propertiesx on one line.  When using the shorthand the order matters.  There are two required properties, font-size and font-family.
+```css
+font: italic small-caps bold 12px arial, verdana;
 ```
-
-#### Breaking it down
-
-Lets start with the `<a>` which is added to create the anchor. Next we need to add the `href` **attribute** to make the anchor act as a _link_. Then we wrap the text we want the user to click on with the `<a>`. Last we add the location of the page we want to link to.
-
-If we had the text **HTML at SVA** and wanted to link to the web page _http://www.svahtml.com_ the link would look like this.
-
-```html
-<a href="http://www.svahtml.com">HTML at SVA</a>
-```
-
-Keep in mind that the `<a>` is an inline element so it can be placed next to other text.
-
-If you want a link to be on its own line it would need to wrapped with a Block-Level element like a `<p>`.
+If you do not define a property within the shorthand it will be set to the default state often normal. It could be the case that in the case of `h1` where the default is for the text to be bold that when using the shorthand and not setting the `font-weight` it will be sent to `normal` and the `h1` will no longer be bold even though we did not set it.
 
 ---
 
-## Linking to a file in the same folder
+`font-style` will define if something will be italic.  If something is italic by default like the `em` you can also set the `font-style` to be `normal` and it will remove the italics.
+```css
+font-style: italic;
+```
+---
 
-When you link to a file that is in the same folder just add the file name to the HREF attribute.
+`font-variant` will set the text to be `small-caps` where the “lowercase” letters will be displayed as small uppercase letters.
+```css
+font-variant: small-caps;
+```
+---
 
-```html
-<a href="filename.html">Link Text</a>
+`font-weight`will define text that is bold.  If something is bold by default like `h2` you can remove the bold by setting the value to `normal`.
+```css
+font-weight: bold;
+```
+---
+
+`font-size` - set the size of the font.
+
+While there are a number of options to define what the size can be we use only three options.  We will use **percent**, **em**, or **pixel**.
+
+Both percent and em calculate the size of the font off of another font size. For example if a font size set to `10px` and wanted to have the text be **twice as large** you could set the size to be `2em` or `200%`,  This will calculate size to be `20px` but if the font size where to change to `12px` it would then calculate the size to `24px`.  The advantage of this is you only need to **change the one font** and all the other fonts will change in relation to that size.
+
+Since we **can’t** measure what an inch is on a computer screen we can’t use it. That also means that we **can’t** use point because `1 points` is defined as `1/72 inch`.  The fact that we do not know what an inch is it we can not calculate what a point is.  Instead you should always define **font sizes in pixels, percent or em**.
+
+```css
+font-size: 12px;
+font-size: 2em;
+font-size: 200%;
 ```
 
-## Linking to a file in a sub folder
+### CSS Units
 
-When linking to a file in a sub folder you need to declare what folder you are navigating to then add the file.
+[View CSS Units](sizes.html)
 
-```html
-<a href="folder/filename.html">Link Text</a>
+---
+
+`font-family` - defines what font is displayed when the page is rendered.  The `font-family` can only load a font that is installed on the **local computer** viewing the page.   This means we are limited in the fonts that installed on both the Mac and Windows computers by default.
+
+```css
+font-family: helvetica, arial, “time new roman”
 ```
 
-## Linking to a file in a parent folder
+**Note:** any font name that has a *space* in needs to be quoted(“).
 
-When linking a file in a parent folder you need to add `"../"` for each folder you want to navigate up. You do not need the folder name when navigating up.
+If you want to use a font that may not be fully supported but have a fall back you can put them in a comma separated list.  If the first item in the list is not available it will try the next font in the list.  If no font is available it will display the browser default.
 
-```html
-<a href="../filename.html">Link Text</a>
-```
+Type             | Name
+-----------------|-----------------------------------------------------------------
+Serif Fonts      | Georgia, serif<br>"Palatino Linotype", "Book Antiqua", Palatino, serif<br>"Times New Roman", Times, serif
+Sans-Serif Fonts | Arial, Helvetica, sans-serif	<br>"Arial Black", Gadget, sans-serif<br>"Comic Sans MS", cursive, sans-serif<br>Impact, Charcoal, sans-serif<br>"Lucida Sans Unicode", "Lucida Grande", sans-serif<br>Tahoma, Geneva, sans-serif<br>"Trebuchet MS", Helvetica, sans-serif<br>Verdana, Geneva, sans-serif
+Monospace Fonts  | "Courier New", Courier, monospace<br>"Lucida Console", Monaco, monospace
 
-## Linking to an outside site
-
-When linking to an outside site you need to add the full URL including the `http://`.
-
-```html
-<a href="http://www.svahtml.com">Link Text</a>
-```
-
-## Linking to a point with a page.
-
-The link add the "#" that says look on the page for a A tag with a name that matches the text after the #.
-
-```html
-<a href="#sectionName">Link to section</a>
-```
-
-The point on the page you are linking to.
-
-```html
-<a name="sectionName"></a>
-```
-
-## Images as a link
-
-### Example
-
-```html
-<a href=”http://www.cnn.com”><img src=”/images/cnnlogo.png” alt=”link to cnn” border=”0”/></a>
-```
-
-## Adding Target
-
-There will be time what you want open a page in a new window. By adding the `target="_blank"` attribute it will force that page to open in a new window or tab.
-
-**Note:** How the page open can not be controlled it is a setting of the browser. In most cases it will open in a new tab.
-
-[Read More](http://css-tricks.com/use-target_blank/) about when you should use `target`
 
 <style>
 table tr td:nth-child(1){width:20%}

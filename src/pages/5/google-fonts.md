@@ -2,7 +2,7 @@
 title: Lesson 5
 lesson: Google Fonts
 lessonId: 5
-order: 3
+order: 2
 ---
 
 ## Introduction
