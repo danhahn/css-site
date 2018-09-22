@@ -9,14 +9,14 @@ const StyledAlert = styled.div`
   background-color: ${c.primary};
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.3) inset;
   padding: 1em;
-  color: $white;
+  color: ${c.white};
   @media all and (max-width: 1199px) {
     padding: 1em;
   }
 `;
 
 const Title = styled.h2`
-  color: ${c.darker};
+  color: ${c.white};
   margin: 0;
   border: none;
 `;
@@ -29,7 +29,7 @@ const Alert = ({ message, url, urlMessage, title }) => {
         {message ? <p>{message}</p> : null}
         {url ? (
           <Button kind="dark">
-            <a href={url}>{urlMessage}</a>
+            <a href={url} target="_blank">{urlMessage}</a>
           </Button>
         ) : null}
       </StyledAlert>
