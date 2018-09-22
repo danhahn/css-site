@@ -6,7 +6,40 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Selectors</title>
   <style>
-
+    h1 {
+      color: red;
+    }
+    .global-header {
+      background-color: lightgray;
+    }
+    .global-footer p {
+      color: orange;
+    }
+    .main-content > p {
+      color: orangered;
+    }
+    h2 + p {
+      font-size: 2em;
+    }
+    p:empty {
+      height: 100px;
+    }
+    .main-content > p:nth-of-type(1) {
+      color: pink;
+    }
+    li:nth-of-type(even) {
+      color: purple;
+    }
+    h2 ~ blockquote {
+      background-color: aqua;
+    }
+    [class*="global"] {
+      border: 1px solid red;
+    }
+    h2::before {
+      content: "hi";
+      font-size: small;
+    }
   </style>
 </head>
 <body>
@@ -16,16 +49,17 @@
     </header>
     <nav class="global-nav">
       <ul>
-        <li><a href="">Nav Item 1</a></li>
-        <li><a href="">Nav Item 2</a></li>
-        <li><a href="">Nav Item 3</a></li>
-        <li><a href="">Nav Item 4</a></li>
-        <li><a href="">Nav Item 5</a></li>
+        <li><a href="/">Nav Item 1</a></li>
+        <li><a href="/">Nav Item 2</a></li>
+        <li><a href="/">Nav Item 3</a></li>
+        <li><a href="/">Nav Item 4</a></li>
+        <li><a href="/">Nav Item 5</a></li>
       </ul>
     </nav>
     <article class="main-content">
       <h2>Article Title</h2>
       <p><span>Lorem ipsum</span> dolor sit amet consectetur adipisicing elit. Magnam et expedita sunt quidem? Amet, dicta!</p>
+      <p></p>
       <p>Facilis sit. Earum alias <strong>nemo omnis quibusdam</strong> maiores odio unde nobis perferendis quas molestias! Magni.</p>
       <blockquote>
         <p>Nihil accusamus optio pariatur quasi sapiente neque hic? Consequatur id reprehenderit perspiciatis nesciunt accusamus tempore?</p>

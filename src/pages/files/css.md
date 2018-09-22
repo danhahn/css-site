@@ -7,8 +7,8 @@ template: single.jade
 
 ### Selectors
 
-| Selector               | Example               | Example description                                                                                                                        | CSS |
-| ---------------------- | --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ | --- |
+| Selector               | Example               | Example description    | CSS |
+| ------------ | --------------------- | --------------------- | --- |
 | .class                 | .intro                | Selects all elements with class="intro"                                                                                                    | 1   |
 | #id                    | #firstname            | Selects the element with id="firstname"                                                                                                    | 1   |
 | \*                     | \*                    | Selects all elements                                                                                                                       | 2   |
