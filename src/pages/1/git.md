@@ -38,11 +38,7 @@ If you are using a Window things are very different and you will need to follow 
 
 ## Getting Started - Git Basics
 
-<a href="https://try.github.io/levels/1/challenges/1" class="btn" target="_blank">Learn Git</a>
-
 <a href="https://github.com/" class="btn" target="_blank">Sign Up for GitHub</a>
-
-<embed width="600" height="600" src="github-git-cheat-sheet.pdf" type="application/pdf" internalinstanceid="11" title="">
 
 ## Git Basics
 
@@ -52,7 +48,7 @@ Once you have git installed and running you will need to turn on git for a folde
 
 Note that anytime you see `$` it is an indication that you nee to run the command form the command line.  You should not copy it, just the stuff after it.
 
-```
+```command
 $ git init
 ```
 
@@ -60,11 +56,11 @@ $ git init
 
 To see the status of git you can run this command
 
-```
+```command
 $ git status
 ```
 
-```
+```command
 On branch master
 
 Initial commit
@@ -81,12 +77,12 @@ nothing added to commit but untracked files present (use "git add" to track)
 
 You will need to add files to be tracked.
 
-```
+```command
 $ git add lesson1.html
 ```
 you can replace the file name with a `.` to add all files
 
-```
+```command
 On branch master
 
 Initial commit
@@ -101,11 +97,11 @@ Changes to be committed:
 
 After the file has all the changes you need you will need to commit the file.
 
-```
+```command
 $ git commit -m "(YOU COMMIT MESSAGE HERE)"
 ```
 
-```
+```command
 On branch master
 nothing to commit, working tree clean
 ```
@@ -114,7 +110,7 @@ nothing to commit, working tree clean
 
 Once you have set up your remote (in our case github) you will need to push your changes
 
-```
+```command
 $ git push
 ```
 

@@ -8,9 +8,11 @@ lessonId: 1
 order: 7
 ---
 
-Comments are a way to give notes within the code that is not rendered by the broswer at thet time of load. Both HTML and CSS Have commetns.
+Comments are a way to give notes within the code that is not rendered by the broswer at thet time of load. Both HTML and CSS Have comments.
 
-## Usess
+Most editors allow you to toggle comments on a line by pressing `⌘ + /` on the mac.
+
+## Uses
 
 * add notes to yourself or other developers
 * "turn off" code that you do not want to display but may need laters
