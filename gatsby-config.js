@@ -9,10 +9,9 @@ module.exports = {
     startDate: `2018-09-24`,
     lessons: 12,
     noClass: [2],
-    classFiles:
-      "https://drive.google.com/drive/folders/1uf3MIQgjbWCtj2GHcjcF0sEITRvOpAt1?usp=sharing",
+    classFiles: "https://github.com/svahtml/css-fall-2018",
     siteTitle: `Coding HTML and CSS - Advanced`,
-    signUpLink: ``
+    signUpLink: `https://goo.gl/forms/WMAWl0HU35kbDx3E3`
   },
   plugins: [
     {
@@ -41,9 +40,7 @@ module.exports = {
           {
             resolve: `gatsby-plugin-google-fonts`,
             options: {
-              fonts: [
-                `Roboto Mono`
-              ]
+              fonts: [`Roboto Mono`]
             }
           },
           {
