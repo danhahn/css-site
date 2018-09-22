@@ -24,7 +24,7 @@ nav:
   Image Types: image-types.html
   Embed: embed.html
   Homework: homework.html
-badges: [html]
+badges: [html, css]
 ---
 
 This week we will talk about font, text, border, padding and margins.  We will also talk about colors.

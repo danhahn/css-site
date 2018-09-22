@@ -6,7 +6,7 @@ template: article.jade
 lessonId: 6
 order: 1
 
-badges: [css]
+badges: [javascript]
 ---
 
 This week we will start to talk about JavaScript and how we can use it on our pages.

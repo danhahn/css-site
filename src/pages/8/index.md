@@ -9,7 +9,7 @@ template: article.jade
 lessonId: 8
 order: 1
 
-badges: [html,css]
+badges: [html, javascript]
 ---
 
 This week we start to talk about ReactJS and how we can use it to build a SPA.

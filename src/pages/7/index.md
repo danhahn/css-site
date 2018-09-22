@@ -6,7 +6,7 @@ template: article.jade
 lessonId: 7
 order: 1
 
-badges: [html, css]
+badges: [javascript]
 ---
 
 This week will spend more time on JavaScript.

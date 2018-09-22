@@ -5,7 +5,7 @@ lesson: Intro Gatsby JS
 template: article.jade
 lessonId: 10
 
-badges: [html, css]
+badges: [html, javascript]
 ---
 
 This week we start to talk about Gatsby JS which is a static site generator

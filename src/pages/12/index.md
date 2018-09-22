@@ -7,7 +7,7 @@ template: article.jade
 lessonId: 12
 order: 1
 
-badges: [html,css]
+badges: [html,css,javascript]
 ---
 
 This week we work on the in class final.

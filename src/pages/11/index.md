@@ -6,7 +6,7 @@ template: article.jade
 lessonId: 11
 order: 1
 
-badges: [html, css]
+badges: [javascript]
 ---
 
 This week we will talk more about Gatsby JS.

@@ -6,7 +6,7 @@ template: article.jade
 lessonId: 9
 order: 1
 
-badges: [html, js]
+badges: [html, css, javascript]
 ---
 
 This week we will spend more time working in ReactJS.

@@ -22,7 +22,7 @@ tags:
       'icon': 'fa fa-quote-right'
       'data' : ['href', 'class', 'id']
 
-badges: [html, css]
+badges: [css]
 ---
 
 This week we will start to talk about CSS Flex box.

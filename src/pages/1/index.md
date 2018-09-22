@@ -15,7 +15,7 @@ labels: [Download Stater File]
 attachments:
   - "./HTML-[YOUR_NAME].zip"
 url: null
-badges: [html]
+badges: [html, css]
 lessonId: 1
 order: 1
 ---
