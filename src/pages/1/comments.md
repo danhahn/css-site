@@ -1,11 +1,9 @@
 ---
 title: Lesson 1
 lesson: Comments
-author: Dan Hahn
-date: 9/18/2017 18:00
 template: article.jade
 lessonId: 1
-order: 7
+order: 5
 ---
 
 Comments are a way to give notes within the code that is not rendered by the broswer at thet time of load. Both HTML and CSS Have comments.

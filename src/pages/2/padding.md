@@ -24,6 +24,9 @@ Padding is the space from the `border` in to the content. Even if a border is no
 
 Padding will define all four sides of the box one value is set. If you need to define the padding of just one side of the box you can use `padding-[top,right,bottom,left]`.
 
+<iframe height='500' scrolling='no' title='Padding' src='//codepen.io/danhahn/embed/MoQYeQ/?height=265&theme-id=dark&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/danhahn/pen/MoQYeQ/'>Padding</a> by Dan Hahn (<a href='https://codepen.io/danhahn'>@danhahn</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
+
 ### Example
 
 ```css

@@ -2,20 +2,7 @@
 title: Lesson 2
 lesson: Margin
 author: Dan Hahn
-date: 09/25/2017 18:00
 template: article.jade
-nav:
-  Font Properites: index.html
-  Text Properties: text.html
-  Include File: include.html
-  Define a color: color.html
-  CSS Units: sizes.html
-  Borders: borders.html
-  Padding: padding.html
-  Margin: margin.html
-  Pseudo: pseudo.html
-  overflow: overflow.html
-  Homework: homework.html
 lessonId: 2
 order: 8
 ---
@@ -23,6 +10,9 @@ order: 8
 Margin is the space from one element `border` to another element `border`. What this means that that you are note setting the space from the edge of margin but the element itself.  Margins can overlap.
 
 Margin will define all four sides of the box one value is set. If you need to define the margin of just one side of the box you can use `margin-[top,right,bottom,left]`.
+
+<iframe height='500' scrolling='no' title='Padding' src='//codepen.io/danhahn/embed/MoQYeQ/?height=265&theme-id=dark&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/danhahn/pen/MoQYeQ/'>Padding</a> by Dan Hahn (<a href='https://codepen.io/danhahn'>@danhahn</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
 
 ### Example
 

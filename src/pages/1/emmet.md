@@ -1,11 +1,9 @@
 ---
 title: Lesson 1
 lesson: Emmet
-author: Dan Hahn
-date: 9/18/2017 18:00
 template: article.jade
 lessonId: 1
-order: 5
+order: 7
 ---
 
 Emmet is a plugin that allows your to write short hand to produce HTML tags.
@@ -57,7 +55,7 @@ becomes
 </ol>
 ```
 OR
-```
+```emmet
 section>article>h1>a
 ```
 becomes
@@ -72,7 +70,7 @@ becomes
 ## Adding a sibling
 
 Like the direct child selector Emmet and use the sibling selector to create two elements that are siblings of each other.
-```
+```emmet
 h1+p
 ```
 becomes
@@ -81,7 +79,7 @@ becomes
 <p></p>
 ```
 Adding a direct child selector
-```
+```emmet
 article>h2+p
 ```
 becomes
@@ -96,7 +94,7 @@ becomes
 
 Sometimes you need to add more than one of an element like when creating a list.  You will need to have many `<li>`.  Emmet makes this easy by using the `*` multiplier.  If you need to create more than one of an element you can add `*` and the number that you need.
 
-```
+```emmet
 ul>li*4
 ```
 becomes
@@ -131,7 +129,7 @@ Make the HTML template is easy with emmet.  There is a build in shortcut.  Just 
 
 If you need to add a class or id name to an element you can do it by adding the "selector" to the element.
 
-```
+```emmet
 header.global-header>h1.main-title
 ```
 becomes

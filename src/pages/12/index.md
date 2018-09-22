@@ -3,7 +3,7 @@ title: Lesson 12
 index: true
 author: Dan Hahn
 lesson: Final Project
-template: article.jade
+template: final.jade
 lessonId: 12
 order: 1
 
