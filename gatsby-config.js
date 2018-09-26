@@ -11,7 +11,7 @@ module.exports = {
     noClass: [2],
     classFiles: "https://github.com/svahtml/css-fall-2018",
     siteTitle: `Coding HTML and CSS - Advanced`,
-    signUpLink: `https://goo.gl/forms/WMAWl0HU35kbDx3E3`
+    signUpLink: ``
   },
   plugins: [
     {
