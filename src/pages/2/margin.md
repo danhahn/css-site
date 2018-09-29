@@ -4,7 +4,7 @@ lesson: Margin
 author: Dan Hahn
 template: article.jade
 lessonId: 2
-order: 8
+order: 9
 ---
 
 Margin is the space from one element `border` to another element `border`. What this means that that you are note setting the space from the edge of margin but the element itself.  Margins can overlap.
@@ -36,11 +36,9 @@ The problem with centering `#container` on the page is there is no real property
 
 By setting the `margin` on the left and right to `auto` the element will be centered on the page. Because we set the left and right to auto it take the space left over after the and divide it by 2 and set it equal to each other. This will make the element center on the page.
 
-```html
-<style>
-    #container {
-        width: 800px;
-        margin: 0 auto;
-    }
-</style>
+```css
+.container {
+  width: 800px;
+  margin: 0 auto;
+}
 ```

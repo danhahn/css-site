@@ -17,7 +17,7 @@ nav:
   overflow: overflow.html
   Homework: homework.html
 lessonId: 2
-order: 7
+order: 8
 ---
 
 Padding is the space from the `border` in to the content. Even if a border is not defined there is still an edge of the element, this is the `border`.

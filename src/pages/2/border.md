@@ -23,13 +23,28 @@ nav:
 
 Borders can be added to most every element and are made up of three parts.
 
-* `border-width:` defines the width of the border, If no border is defined the default size is 3px.
-* `border-style:` defines how the border will look.  There are a number of options including solid, double, dotted and dashed.
-* `border-color:` defines the color of the border.  If no color is defined the current font color will be used.
+Value | Description
+---|---
+`border-width` | Specifies the width of the border. Default value is "medium"
+`border-style` | Specifies the style of the border. Default value is "none"
+`border-color` | Specifies the color of the border. Default value is the color of the text
 
 A border can’t be defined on an element with out at least the border-style because there is no default value.  If you only define a border-style the border will be 3px thick and have the current font color.
 
 `border-*` will define the border for all sides.  If you need to define a border for only side there are border-[top,right,bottom,left]-[width,style,color] that can be used.
+
+### Short Hand
+
+```css
+border: border-width border-style border-color|initial|inherit;
+```
+
+### Real world example
+
+```css
+border: 10px solid blue;
+```
+
 ### For example
 
 ```css
