@@ -23,6 +23,9 @@ There are a few display we use more than all the other.  `none`, `inline-block`,
 
 **Note:** Changing a display type can have an effect on SEO so it is recommend that when possible use the valid HTML tags.
 
+<iframe height='265' scrolling='no' title='Display' src='//codepen.io/danhahn/embed/PywEJo/?height=265&theme-id=light&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/danhahn/pen/PywEJo/'>Display</a> by Dan Hahn (<a href='https://codepen.io/danhahn'>@danhahn</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
+
 ## Property Values
 Value | Description
 ---|---
