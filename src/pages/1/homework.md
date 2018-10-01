@@ -5,6 +5,8 @@ template: article.jade
 lessonId: 1
 order: 8
 
+homework:
+  lesson: lesson1
 ---
 
 ## Starter File

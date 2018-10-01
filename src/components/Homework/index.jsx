@@ -11,6 +11,7 @@ const StyledHomework = styled.div`
   padding: 2em;
   border-radius: 15px;
   background-color: ${c.light};
+  display: none;
 `;
 
 const H2 = styled.h2`
