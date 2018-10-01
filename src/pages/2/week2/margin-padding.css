@@ -1,0 +1,9 @@
+body {
+  font: 16px arial;
+  background-color: #c0c0c0;
+}
+
+.wrapper {
+  width: 800px;
+  background-color: #ffffff;
+}
