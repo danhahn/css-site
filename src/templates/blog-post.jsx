@@ -23,9 +23,8 @@ const Code = styled.div`
     }
   }
   .note {
-    background-color: ${c.primary20};
-    color: ${c.white};
-    padding: 1em;
+    background-color: ${c.primary40};
+    padding: .5em 1em;
     border-radius: 10px;
   }
 `;
