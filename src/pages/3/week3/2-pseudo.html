@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Pseudo Class</title>
+  <link rel="stylesheet" href="2-pseudo.css">
+</head>
+<body>
+<main class="wrapper">
+  <header class="title">
+    <h1>Pseudo Class</h1>
+  </header>
+  <article class="content">
+    <h2>Example</h2>
+
+    <p>A pseudo-class is used to define a special state of an element.</p>
+
+    <p>For example, it can be used to:</p>
+
+    <ul>
+      <li>Style an element when a user mouses over it</li>
+      <li>Style visited and unvisited links differently</li>
+      <li>Style an element when it gets focus</li>
+    </ul>
+
+    <h3>Style a link</h3>
+
+    <ul>
+      <li>link</li>
+      <li>visited</li>
+      <li>active</li>
+      <li>hover</li>
+    </ul>
+
+    <p>
+      <a href="http://www.lego.com" class="link">Shop for Legos</a>
+    </p>
+
+    <p class="note">
+      <strong>Note:</strong> <code>a:hover</code> MUST come after <code>a:link</code> and <code>a:visited</code> in the CSS definition in order to be effective! <code>a:active</code> MUST come
+      after <code>a:hover</code> in the CSS definition in order to be effective! Pseudo-class names are not case-sensitive.
+    </p>
+
+    <h3>focus</h3>
+
+    <p>The <code>:focus</code> CSS pseudo-class represents an element (such as a form input) that has received focus. It is generally triggered when the user clicks or taps on an element or selects it with the keyboard's "tab" key.</p>
+
+    <input type="text" class="input" placeholder="Click Here">
+
+    <h3>Before and After</h3>
+
+    <p>CSS gives two free pseudo elements on every element you need to set the <code>content</code> on the <code>::before</code> or <code>::after</code></p>
+
+    <blockquote class="quote">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab labore libero necessitatibus recusandae culpa voluptatibus ad molestias tenetur, impedit mollitia a eius provident amet quod similique maiores dicta magnam. Eius voluptatibus nam fugit eos iste eum voluptatem maxime animi! Sit laboriosam animi earum quas veritatis esse inventore labore, iure quam necessitatibus velit provident autem saepe dignissimos perspiciatis, facere illo voluptates ullam voluptatum corporis nihil accusantium. Ut dolorem amet voluptatum impedit reprehenderit architecto eius sequi assumenda ex esse in odit similique tenetur dolore eos deserunt adipisci vitae illum aperiam magni, quaerat optio sed repellendus. Earum iure iusto, quo explicabo tempore voluptatum?</p>
+    </blockquote>
+
+  </article>
+</main>
+</body>
+</html>

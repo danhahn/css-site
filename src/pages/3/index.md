@@ -9,6 +9,10 @@ lessonId: 3
 order: 1
 
 badges: [css]
+
+labels: [Download Stater File]
+attachments:
+  - "./week3.zip"
 ---
 
 This week we will start to talk about CSS Flex box.

@@ -1,0 +1,22 @@
+@import "week3-base.css";
+
+.input {
+  border: 2px solid black;
+  padding: .5em 1em;
+  border-radius: 4px;
+}
+
+.quote {
+  margin: 0;
+  font-size: 1.5em;
+  color: darkturquoise;
+}
+
+
+/* https://practicaltypography.com/straight-and-curly-quotes.html */
+/*
+ “ - \201C
+ ” - \201D
+*/
+
+/* http://www.evotech.net/articles/testjsentities.html */

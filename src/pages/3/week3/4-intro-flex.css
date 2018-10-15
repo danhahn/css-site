@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font: 16px arial;
+  margin: 0;
+}
+
+.parent {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  border: 10px solid black;
+/*   height: 100vh; */
+  display: flex;
+}
+
+.child {
+  padding: 1rem;
+  background-color: goldenrod;
+  border: 10px solid darkgoldenrod;
+}
+
+/* .parent::before {
+  content: 'Main Axis';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  right: 0;
+  text-align: center;
+  padding-left: 100px;
+  background-color: gold;
+  z-index: 1;
+}
+
+.parent::after {
+  content: 'Cross Axis';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) rotate(-90deg);
+  left: 0;
+  right: 0;
+  text-align: center;
+  padding-left: 100px;
+  background-color: yellow;
+} */
