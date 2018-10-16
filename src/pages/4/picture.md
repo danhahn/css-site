@@ -4,7 +4,6 @@ lesson: Picture Element
 template: article.jade
 lessonId: 4
 order: 3
-
 ---
 
 ## Definition and Usage

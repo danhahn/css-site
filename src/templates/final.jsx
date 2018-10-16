@@ -99,7 +99,6 @@ class Final extends React.Component {
     let formattedHtml = post.html;
     formattedHtml = formattedHtml.replace(/<ul>\n<li>(#[0-9a-fA-F]*)<\/li>\n/g, testUl);
     formattedHtml = formattedHtml.replace(/(<li>(#[0-9a-fA-F]*)<\/li>\n)/g, testColor)
-    // console.log(formattedHtml);
     return <div>
         <Helmet>
           <title>{`${lesson} - ${title}`}</title>

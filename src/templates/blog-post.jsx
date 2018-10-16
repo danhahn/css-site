@@ -49,10 +49,7 @@ export default ({ data }) => {
   }
   const { localcss, title, lesson, homework } = post.frontmatter;
   const postWithNotes = html.replace(/<p><strong>note:/gi, "<p class=\"note\"><strong>Note:");
-  console.log(postWithNotes);
-  console.log(postWithNotes);
-  return (
-    <div>
+  return <div>
       <Helmet>
         <title>{`${lesson} - ${title}`}</title>
         {localcss ? <link rel="stylesheet" href={`./${localcss}`} /> : null}
@@ -65,15 +62,10 @@ export default ({ data }) => {
             <Code dangerouslySetInnerHTML={{ __html: postWithNotes }} />
             {homework ? <Homework lesson={homework.lesson} /> : null}
           </Article>
-          <SideNav
-            nav={nav.edges}
-            passedClassName={styles.sidebar}
-            downloads={downloads || post.frontmatter.downloads}
-          />
+          <SideNav nav={nav.edges} passedClassName={styles.sidebar} downloads={downloads || post.frontmatter.downloads} />
         </BlogPost>
       </ExtendLayout>
-    </div>
-  );
+    </div>;
 };
 
 export const query = graphql`

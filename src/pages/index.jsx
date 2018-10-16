@@ -41,7 +41,6 @@ export default ({ data }) => {
     .format("MMMM D, YYYY");
 
   const today = moment().format(`MMMM D, YYYY`);
-  console.log(today);
 
   return (
     <div>
