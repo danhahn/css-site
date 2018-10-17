@@ -6,6 +6,15 @@ lessonId: 4
 order: 3
 ---
 
+## Responsive Images
+
+Images are not a one size fits all.  In the past we could load one image and it would display on any screen size.  Sure it might be a little bigger than it needs to be but so what every one has broadband.  This is what everyone was saying in 2008. Then this little thing called the iPhone came out and everything changed.  There was a push to make the web responsive and to use the right size image for the right device.  Media query allow you to look at the screen size and change the styles based on it.
+
+Introducing the `<picture>` element.  This is a wrapper element that allows the source of the image to be replaced based on a media query.
+
+<iframe height='374' scrolling='no' title='Picture Element' src='//codepen.io/danhahn/embed/wYyZyd/?height=374&theme-id=light&default-tab=result' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/danhahn/pen/wYyZyd/'>Picture Element</a> by Dan Hahn (<a href='https://codepen.io/danhahn'>@danhahn</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
+
 ## Definition and Usage
 
 The `<picture>` tag gives web developers more flexibility in specifying image resources.
