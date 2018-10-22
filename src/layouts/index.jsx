@@ -34,10 +34,10 @@ export default ({ children, data }) => {
 
   return (
     <div className={styles.layoutWrapper}>
-      <Helmet defaultTitle={`SVA HTML`} titleTemplate={`%s | SVA HTML`}>
+      <Helmet defaultTitle={`SVA CSS`} titleTemplate={`%s | SVA CSS`}>
         <meta name="twitter:site" content="@svahtml" />
         <meta name="og:type" content="website" />
-        <meta name="og:site_name" content="SVA HTML" />
+        <meta name="og:site_name" content="SVA CSS" />
         <html lang="en" />
       </Helmet>
       <Header
