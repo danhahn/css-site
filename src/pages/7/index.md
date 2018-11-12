@@ -6,6 +6,11 @@ template: article.jade
 lessonId: 7
 order: 1
 
+labels: [Download Stater File]
+attachments:
+  - "./week7.zip"
+
+
 badges: [javascript]
 ---
 

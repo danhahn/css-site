@@ -182,7 +182,25 @@ This gives un an error in the console if we click it.
 ### js
 
 ```javascript
-var button = docume
+var button = document.querySelector('#clickMe');
+button.addEventListener('click', () => {
+  console.log('clicked');
+});
 ```
+
+Now if we click the button it will write "clicked" to the console.
+
+Alot of the time we want to break the function called out from the event it might look like this.
+
+```javascript
+function logClicked() {
+  console.log('clicked from a function');
+}
+
+var button = document.querySelector('#clickMe');
+button.addEventListener('click', logClicked);
+```
+
+this will do the same thing but is a little more clear.
 
 
