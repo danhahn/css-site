@@ -144,3 +144,4 @@ ReactDOM.render(<App />, rootElement);
 By `import Header from "./components/Header.jsx";` we get access to the file.  It stores it in a variable `Header`.
 
 Since we exported a component we can just use it like `<Header />` and since we are not wrapping any thing we can use a self closing tag.
+

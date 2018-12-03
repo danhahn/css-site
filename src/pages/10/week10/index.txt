@@ -1,0 +1,9 @@
+Open a terminal
+
+npx create-react-app gallery
+cd gallery
+npm start
+
+-----
+
+npm install --save react-id-swiper
