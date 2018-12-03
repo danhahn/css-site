@@ -9,3 +9,22 @@ npm start
 npm install --save react-id-swiper
 
 fetch = "https://api.myjson.com/bins/1f8zmq"
+
+add to .html
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/css/swiper.min.css">
+
+params for swiper
+    const params = {
+      pagination: {
+        el: ".swiper-pagination",
+        type: "bullets",
+        clickable: true
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev"
+      },
+      spaceBetween: 30,
+      renderPrevButton: () => <button className="swiper-button-prev prev" />,
+      renderNextButton: () => <button className="swiper-button-next next" />
+    };
