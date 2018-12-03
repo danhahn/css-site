@@ -7,3 +7,5 @@ npm start
 -----
 
 npm install --save react-id-swiper
+
+fetch = "https://api.myjson.com/bins/1f8zmq"
