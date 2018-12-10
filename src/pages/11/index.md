@@ -1,7 +1,7 @@
 ---
 title: Lesson 11
 index: true
-lesson: More Gatsby
+lesson: Gatsby
 template: article.jade
 lessonId: 11
 order: 1
