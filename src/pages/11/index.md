@@ -9,7 +9,7 @@ order: 1
 badges: [javascript]
 ---
 
-This week we will talk more about Gatsby JS.
+This week we will talk about Gatsby JS and SCSS.
 
 <span class="more"></span>
 
